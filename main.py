@@ -71,9 +71,6 @@ if __name__ == '__main__':
         download_url = ''
         req_headers = ''
         body = ''
-        audio = {}
-        types = {'256x144': 4, '640x360': 1, '426x240': 0, '852x480': 2, '1280x720': 3}
-        bandwidths = {'256x144': 0, '640x360': 0, '426x240': 0, '852x480': 128000, '1280x720': 192000}
         error = False
 
         source = check_exists_by_xpath(driver, '//iframe[contains(@src,"/player/")]')
@@ -132,7 +129,6 @@ if __name__ == '__main__':
         resolutions = []
         resolution = 0
         urls = []
-        audios = []
 
         if not vip:
             print('--- Çözünürlükler ---')
